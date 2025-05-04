@@ -1,0 +1,471 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+} 
+
+
+@font-face {
+font-family:'Estandar';
+src: url('../../fonts/Estandar-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+	font-family:'Build Titling';
+	src: url('../../fonts/built titling sb.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+ @font-face {
+	font-family:'Noto Bold';
+	src: url('../../fonts/NotoSans_ExtraCondensed-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+} 
+
+@font-face {
+	font-family:'Noto Sans';
+	src: url('../../fonts/NotoSans_Condensed-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+ 
+@font-face {
+	font-family:'Inter';
+	src: url('../../fonts/Inter-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+	
+@font-face {
+	font-family:'Inter Bold';
+	src: url('../../fonts/Inter-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Barlow';
+	src: url('../../fonts/BarlowCondensed-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/* -- Scrollbar -- */
+
+::-webkit-scrollbar {width: 0.7em;}
+::-webkit-scrollbar-track {background: #0c0b13;}
+::-webkit-scrollbar-thumb {
+	background: #676374; 
+	border-radius: 100vw; 
+	border:2px solid #191924;
+}
+::-webkit-scrollbar-thumb:hover {background: #3f3d46;}
+
+
+
+
+
+
+/* ----------- B O D Y --------------------------------------------------------- */ 
+body {background-color: #0c0b13;}
+
+
+
+
+
+
+
+
+/* ----------- HEADER --------------------------------------------------------- */ 
+
+
+#header-nav {width: 100%; position: fixed; z-index: 30;}
+
+.header {
+	background-color: #000001;
+	background-image: url("../../img/images/header-back.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 700px;
+	width: 100%;
+	height: 61px;
+	padding: 0px 30px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.header .logo {position: relative; top: 8px; left: 0px;}
+.header .logo img{width: 40px; transition: 0.2s;}
+.header .logo img:hover{transform-style: preserve-3d; transform: scale(1.1);}
+
+
+
+.header .header-contents{
+	width: 40%;
+	line-height: 60px;
+	position: relative;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.header .header-contents .login {position: absolute; right: 0px;}
+
+.header .header-contents div {margin: 0px 8px;}
+.header .header-contents #btn-login{
+	color: rgb(10, 10, 10);
+	border: none;
+	font-family: Noto Bold;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 6px 10px;
+	background-color: rgb(244, 244, 245);
+	border: 1px solid rgb(244, 244, 245);
+	transition: 0.3s ease;
+	margin: 0px 2px;
+}
+
+.header .header-contents #btn-login:hover {
+	background-color: #282533;
+	border-color: #282533;
+	color: rgb(244, 244, 245);
+}
+
+.header .header-contents #btn-reader {
+	color: #000000;
+	font-family: Noto Bold;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 6px 10px;
+	transition: 0.3s ease;
+	background: linear-gradient(to top right, #47c6fc, #c33dfc, #fc3d77, #ffbd24);
+}
+
+.header .header-contents #btn-reader:hover {
+	color: #ffffff;
+	background: linear-gradient(to top left, #47c6fc, #c33dfc, #fc3d77, #ffbd24);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- U S E R --------------------------------------------------------- */ 
+
+
+.user {
+	position: absolute;
+	border: 1px solid #131316;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	border-radius: 100px;
+	top: 8px;
+	right: 30px;
+	cursor: pointer;
+}
+
+.user img {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	object-fit: cover;
+	position: relative;
+}
+
+.user-menu {
+	background-color: #191924;
+	height: auto;
+	width: 280px;
+	position: absolute;
+	border-radius: 2px;
+	right: 10px;
+	top: 60px;
+	color: #1c1d25;
+	border: 1px solid #302e31;
+	box-shadow: 0px 2px 10px #00000088;
+	display: none;
+}
+
+.user-menu .user-menu-header {
+	display: flex;
+	width: 100%;
+	height: 65px;
+	border-bottom: 1px dashed #4f4d5a;
+	padding: 8px 30px 8px;
+}
+
+.user-menu .user-menu-header .extremer-icon img {
+	margin-top: 6px;
+	margin-left: -10px;
+	margin-right: 15px;
+}
+
+
+.user-menu .user-menu-header .user-header-txt {margin-top: 5px;}
+.user-menu .user-menu-header .user-header-txt h3 {
+	font-family: Estandar;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #e3e0e6;
+	font-weight: normal;
+}
+
+.user-menu .user-menu-header .user-header-txt p {
+	font-family: Noto Sans;
+	color: #9a979c;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+
+.user-menu .user-menu-list li {
+	width: 100%;
+	padding: 16px;
+	height: auto;
+	font-weight: normal;
+	font-family: Noto Sans;
+	color: #fcfcfc;
+	font-size: 16px;
+	letter-spacing: 1px;
+	transition: all 0.2s ease-in-out;
+}
+
+.user-menu .user-menu-list li:hover {background: #111118;}
+
+.user-menu .user-menu-list li img {
+	margin-right: 20px; 
+	margin-bottom: -3px;
+}
+
+.user-menu .user-menu-list a #uml-line {
+	border-top: 1px dashed #4f4d5a;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- M E N U --------------------------------------------------------- */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+
+.menu-list a #cartoon:hover {color: #15aaff;}
+.menu-list a #comics:hover {color: #ff7c10;}
+.menu-list a #lnovels:hover {color: #ff1a5e;}
+.menu-list a #mangas:hover {color: #af2aff;}
+
+
+.menu-list span {
+	margin-top: 20px;
+	margin-right: 4px;
+	font-size: 12pt;
+	font-weight: normal;
+}
+ 
+.menu {
+	background-color: #191924;
+	width: 100%;
+	text-align: center; 
+	box-shadow: 0px 5px 10px #000000c9;
+}
+
+.menu-list {
+	width: 90%;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.menu-list a {display: flex; justify-content: space-around;}
+
+.menu-list li {
+	color: #fafafa;
+	font-size: 18px; 
+	font-weight: normal;
+	text-transform: uppercase;
+	font-family: Noto Bold;
+	padding: 14px 6px;
+	transition: 0.2s ease;
+}
+
+.menu-list li:hover{color: #bbbbbb;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- POLITIC BODY ------------- */ 
+
+.polibody {
+	padding-left: 60px;
+	margin-bottom: 200px;
+}
+
+.polibody h1 {
+	font-family: Barlow;
+	color: #eeeeee;
+	font-size: 3.6em;
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+
+.polibody h2 {
+	font-family: Inter Bold;
+	font-weight: normal;
+	font-size: 1em;
+	margin: 16px 0px;
+	background: #282533;
+	border-radius: 3px;
+	padding: 8px;
+	color: #fafafa;
+	width: fit-content;
+}
+
+.polibody p {
+	font-family: Inter;
+	font-weight: normal;
+	line-height: 26px;
+	font-size: 1em;
+	color: #dddddd;
+	margin-bottom: 30px;
+	text-indent: 15px;
+	text-align: justify;
+}
+
+.polibody p span{
+	padding: 4px;
+	background: #dfdae2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- F O O T E R ------------------------------------------------------ */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+ 
+
+.footer {
+	clear: both;
+	background-color: #252329;
+	width: 100%;
+	height: 350px;
+	position: relative;
+	background-image: url("../../img/images/back-login.png");
+	background-position: bottom;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.footer img {
+	position: absolute;
+	left: 100px;
+	top: -20px;
+	width: 370px;
+	opacity: 0.8;
+}
+
+
+.footer-container {
+	display: inline-flex;
+	margin-top: 65px;
+	margin-left: 45%;
+}
+
+.footer-container div{ 
+	margin: 0px 22px; 
+	max-width: 150px;
+}
+
+.footer-container h4 {
+	font-family: Noto Bold;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 20px;
+	color: #ffffff;
+	margin-bottom: 15px;
+}
+
+.footer-container li {margin: 5px 0px;}
+.footer-container li a {
+	font-family: Noto Bold;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #999;
+	font-size: 17px; 
+	transition: 0.1s;
+}
+
+.footer-container li a:hover {color: #fff;}

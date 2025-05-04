@@ -1,0 +1,248 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+} 
+  
+ 
+
+@font-face {
+font-family:'Rubik Medium';
+src: url('../../fonts/Rubik-SemiBold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+@font-face {
+    font-family:'Rubik';
+    src: url('../../fonts/Rubik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family:'Rubik Bold';
+    src: url('../../fonts/Rubik-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+
+@font-face {
+    font-family:'Inter';
+    src: url('../../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Inter Medium';
+    src: url('../../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+    
+@font-face {
+    font-family:'Inter Bold';
+    src: url('../../fonts/Inter-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Noto Sans';
+    src: url('../../fonts/NotoSans_Condensed-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Noto Bold';
+    src: url('../../fonts/NotoSans_ExtraCondensed-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+body {background: #06040a;}
+ 
+.logo {margin-top: 3%; text-align: center; margin-bottom: 4%;}
+.logo img {opacity: 0.7; width: 40px; transition: 0.2s;}
+.logo img:hover {opacity: 1;}
+
+
+.login {width: 100%;}
+.login .login-container{
+    margin: 0 auto;
+    position: relative;
+    background-color: #0f0e1a;
+    width: 420px;
+    height: auto;
+    border-radius: 4px;
+    padding: 20px 30px;
+    background-image: url("../../img/images/back-login.png");
+    background-position: center;
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 10px 40px #000000e0;
+}
+
+
+
+
+.login-container #noAccount{
+    color: #ff3b76; 
+    font-family: Inter; 
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.login-container #noAccount:hover{color: #ffffff;}
+
+.login-container .conta {width: 100%; text-align: center;}
+.login-container .conta p {
+    color: #cec6c8; 
+    font-family: Inter Bold; 
+    font-size: 0.9em;
+}
+
+.login .login-container .log-top h2 {
+    font-family: Inter Bold;
+    font-weight: normal;
+    font-size: 1.4em;
+    color: #e8e9ec;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.login .login-container .log-top p {
+    font-family: Inter;
+    font-size: 1em;
+    color: #ded7e6; 
+    text-align: center;
+}
+
+.login .login-container #form {margin-top: 20px;}
+
+.login .login-container #form h4 {
+    font-family: Inter Medium;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 13.5px;
+    color: #dcdee4;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.login .login-container #form span {
+    font-family: Inter;
+    font-size: 20px;
+    color: #fd5000;
+
+}
+
+.login .login-container #form input {
+    border: 1px solid #5e5a64;
+    background: #06040aaa;
+    width: 100%;
+    height: 46px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.login .login-container #form input:visited {background: #13141ba6;}
+
+
+.login .login-container #form input:active{
+    background: #13141bd2;
+    border-color: #8e8797;
+}
+
+.login .login-container #form input:focus{
+    background: #13141bd2;
+    border-color: #8e8797;
+}
+
+.login .login-container #form a {
+    font-family: Inter;
+    font-size: 15px;
+    color: #999999;
+    transition: 0.3s;
+}
+
+.login .login-container #form a:hover{color: #fff;}
+
+.login .login-container #form .inpTxt {
+    padding-left: 12px;
+    font-family: Inter;
+    color: #9499a8;
+    font-size: 1.1em;
+}
+
+.login .login-container #form #button {
+    color: #f0ebf3;
+    font-family: Rubik Bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    border: 1px solid #efebf1;
+    background: transparent;
+    margin-top: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.login .login-container #form #button:hover {
+    background: linear-gradient(to right, #fd5000, #cf00ad);
+    color: #ffffff;
+    border: none;
+    box-shadow: 0px 2px 20px #080607e0;
+}
+
+
+
+
+
+
+/*
+
+.design {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -120px;
+    z-index: -100;
+}
+
+.design img {
+    width: 100%;
+    height: auto;
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+

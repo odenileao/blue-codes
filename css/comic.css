@@ -1,0 +1,812 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+} 
+
+
+
+@font-face {
+font-family:'Estandar';
+src: url('../fonts/Estandar-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+	font-family:'Build Titling';
+	src: url('../fonts/built titling sb.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+    font-family:'Inter Medium';
+    src: url('../../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+	font-family:'Inter';
+	src: url('../fonts/Inter-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+	
+@font-face {
+	font-family:'Inter Bold';
+	src: url('../fonts/Inter-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Rubik';
+	src: url('../fonts/Rubik-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Rubik Medium';
+	src: url('../fonts/Rubik-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Rubik Bold';
+	src: url('../fonts/Rubik-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Noto Bold';
+	src: url('../fonts/NotoSans_ExtraCondensed-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+} 
+
+@font-face {
+	font-family:'Noto Sans';
+	src: url('../fonts/NotoSans_Condensed-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+/* -- Scrollbar -- */
+
+::-webkit-scrollbar {width: 0.7em;}
+::-webkit-scrollbar-track {background: #0a0810;}
+::-webkit-scrollbar-thumb {
+	background: #676374; 
+	border-radius: 100vw; 
+	border:2px solid #191924;
+}
+::-webkit-scrollbar-thumb:hover {background: #3f3d46;}
+
+
+
+
+/* ----------- B O D Y --------------------------------------------------------- */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+
+
+body {background-color: #0a0810;}
+
+
+#header-nav {width: 100%; position: fixed; z-index: 30;}
+
+.header {
+	background-color: #000001;
+	background-image: url("../img/images/header-back.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 700px;
+	width: 100%;
+	height: 61px;
+	padding: 0px 30px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.header .logo {position: relative; top: 8px; left: 0px;}
+.header .logo img{width: 40px; transition: 0.2s;}
+.header .logo img:hover{transform-style: preserve-3d; transform: scale(1.1);}
+
+
+
+.header .header-contents{
+	width: 40%;
+	line-height: 60px;
+	position: relative;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+
+
+.header .header-contents .login {position: absolute; right: 0px;}
+
+.header .header-contents div {margin: 0px 8px;}
+.header .header-contents #btn-login{
+	color: rgb(10, 10, 10);
+	border: none;
+	font-family: Noto Bold;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 6px 10px;
+	background-color: rgb(244, 244, 245);
+	border: 1px solid rgb(244, 244, 245);
+	transition: 0.3s ease;
+	margin: 0px 2px;
+}
+
+.header .header-contents #btn-login:hover {
+	background-color: #282533;
+	border-color: #282533;
+	color: rgb(244, 244, 245);
+}
+
+
+.header .header-contents #btn-reader {
+	color: #000000;
+	font-family: Noto Bold;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 6px 10px;
+	transition: 0.3s ease;
+	background: linear-gradient(to top right, #47c6fc, #c33dfc, #fc3d77, #ffbd24);
+}
+
+.header .header-contents #btn-reader:hover {
+	color: #ffffff;
+	background: linear-gradient(to top left, #47c6fc, #c33dfc, #fc3d77, #ffbd24);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- U S E R --------------------------------------------------------- */ 
+
+.user {
+	position: absolute;
+	border: 1px solid #131316;
+	width: 40px;
+	height: 40px;
+	border-radius: 100px;
+	top: 8px;
+	right: 30px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.user img {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	object-fit: cover;
+	position: relative;
+}
+
+
+.user-menu {
+	background-color: #191924;
+	height: auto;
+	width: 280px;
+	position: absolute;
+	border-radius: 2px;
+	right: 10px;
+	top: 60px;
+	color: #1c1d25;
+	border: 1px solid #302e31;
+	box-shadow: 0px 2px 10px #00000088;
+	display: none;
+} 
+
+.user-menu .user-menu-header {
+	display: flex;
+	width: 100%;
+	height: 65px;
+	border-bottom: 1px dashed #4f4d5a;
+	padding: 8px 30px 8px;
+}
+
+.user-menu .user-menu-header .extremer-icon img {
+	margin-top: 6px;
+	margin-left: -10px;
+	margin-right: 15px;
+}
+
+
+.user-menu .user-menu-header .user-header-txt {margin-top: 5px;}
+.user-menu .user-menu-header .user-header-txt h3 {
+	font-family: Estandar;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #e3e0e6;
+	font-weight: normal;
+}
+
+.user-menu .user-menu-header .user-header-txt p {
+	font-family: Noto Sans;
+	color: #9a979c;
+	font-weight: normal;
+	letter-spacing: 0px;
+	width: 180px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+.user-menu .user-menu-list li {
+	width: 100%;
+	padding: 16px;
+	height: auto;
+	font-weight: normal;
+	font-family: Noto Sans;
+	color: #fcfcfc;
+	font-size: 16px;
+	letter-spacing: 1px;
+	transition: all 0.2s ease-in-out;
+}
+
+.user-menu .user-menu-list li:hover {background: #111118;}
+
+.user-menu .user-menu-list li img {
+	margin-right: 20px; 
+	margin-bottom: -3px;
+}
+
+.user-menu .user-menu-list a #uml-line {
+	border-top: 1px dashed #4f4d5a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- M E N U --------------------------------------------------------- */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+
+
+.menu-list a #cartoon:hover {color: #15aaff;}
+.menu-list a #comics {border-bottom: 3px solid #ff7c10;}
+.menu-list a #mangas:hover {color: #af2aff;}
+.menu-list a #lnovels:hover {color: #ff1a5e;}
+
+.menu-list span {
+	margin-top: 15px;
+	margin-right: 4px;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.menu{
+	background-color: #191924;
+	width: 100%;
+	text-align: center;
+	box-shadow: 0px 5px 10px #000000c9;
+}
+
+.menu-list{
+	width: 90%;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.menu-list a {display: flex; justify-content: space-around;}
+
+.menu-list li{
+	color: #fafafa;
+	font-size: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-family: Noto Bold;
+	padding: 14px 6px;
+	transition: 0.2s ease;
+}
+
+.menu-list li:hover{color: #bbbbbb;}
+.menu-list li:hover ~ span{color: #bbbbbb;}
+.menu-list span{
+	margin-top: 20px;
+	margin-right: 4px;
+	font-size: 14px;
+	color: #fafafa;
+	font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+/* ----------- UNIVERSE BANNER -------------------------------------------------- */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+
+.universe-banner {
+	width: 100%;
+	height: 380px;
+	background-color: #0a0810;
+	margin-top: 20px;
+	display: flex;
+}
+ 
+
+.universe-banner .univ {
+	width: 24%;
+	height: 100%;
+	background: linear-gradient(to top right, #cb5cff, #ffb545);
+	/*background-color: #0a0810;*/
+	text-align: center;
+}
+
+.universe-banner .univ #univ-img {
+	margin: auto; 
+	margin-bottom: 30px;
+}
+
+.universe-banner .univ .univ-text {
+	margin-top: 60px; 
+	position: relative;
+}
+
+.universe-banner .univ .univ-text img {width: 100px;}
+.universe-banner .univ .univ-text p {
+	font-family: Noto Bold;
+	color: #000000;
+	font-size: 16px;
+	width: 280px;
+	line-height: 24px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+.universe-banner .cartoon-wallpaper {
+	width: 76%;
+	overflow: hidden;
+	position: relative;
+	background-color: #000000;
+}
+
+.universe-banner .cartoon-wallpaper img {
+	width: 100%;
+	object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ALL COMICS GRID ---------------------------------------*/
+
+#all-comics {
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	padding: 30px;
+	overflow: hidden;
+}
+
+#all-comics h4 {
+	font-family: Noto Sans;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 36px;
+	color: #fff;
+	margin-bottom: 6px;
+	margin-left: 40px;
+	border-left: 10px solid #ff7c10;
+	padding-left: 10px;
+}
+
+
+#all-comics .all-comics-container{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 10px;
+	margin-top: 30px;
+	padding: 0px 20px;
+}
+
+#all-comics .all-comics-container .comics {
+	width: 180px;
+	height: auto;
+	margin-bottom: 50px;
+	position: relative;
+}
+ 
+#all-comics .all-comics-container .comics .comic-cover {
+	overflow: hidden;
+	width: 100%; 
+	height: 270px;
+	border-top: 3px solid #0a0810;
+	background-image: url("../img/logo/adeauniverse-gray.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80px;
+}
+
+#all-comics .all-comics-container .comics .comic-cover:hover {
+	border-color: #ff7300;
+}
+
+
+#all-comics .all-comics-container .comics .comic-cover img {
+	width: 100%; 
+	height: 100%;
+	transition: all 0.2s ease;
+}
+
+#all-comics .all-comics-container .comics .comic-cover img:hover {
+	transform-style: preserve-3d;
+	transform: scale(1.2);
+}
+
+#all-comics .all-comics-container .comics-name {
+	width: fit-content;
+	position: relative;
+	margin-top: 10px;
+}
+
+#all-comics .all-comics-container .comics-name span {
+	color: #d69f4d;
+	font-family: Inter;
+	font-size: 12px;
+	margin-top: 4px;
+} 
+
+#all-comics .all-comics-container .comics-name p{
+	font-size: 16px;
+	font-weight: normal;
+	font-family: Rubik Medium;
+	text-transform: uppercase;
+	color: rgb(243, 243, 243);
+	transition: 0.1s ease-in-out;
+	cursor: default;
+	margin-top: 6px;
+	margin-bottom: 10px; 
+}
+
+
+#all-comics .all-comics-container .comics-name h5{
+	font-size: 11px;
+	font-weight: normal;
+	font-family: Rubik;
+	text-transform: uppercase;
+	color: #ff8f27ee;
+	cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---- CARTOONS OFF ------ */
+
+.comics-off-section {
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+	padding: 30px;
+	overflow: hidden;
+}
+
+.comics-off-section h2 {
+	font-family: Rubik Bold;
+	color: #ffffff;
+	font-size: 25px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #777777;
+	width: 650px;
+}
+
+.comics-off-section .comics-off-container {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 10px;
+	margin-top: 30px;
+	padding: 0px 20px;
+} 
+
+.comics-off-section .comics-off-container .comics-off {
+	width: 180px;
+	height: auto;
+	margin-bottom: 50px;
+	position: relative;
+} 
+
+.comics-off-section .comics-off-container .comics-off .bd_off {
+	background-color: #db730a;
+	width: 100%;
+	height: 261px;
+	z-index: 10;
+	position: absolute;
+	opacity: 0.8;
+	display: none;
+	cursor: no-drop;
+	text-align: center;
+}
+
+.comics-off-section .comics-off-container .comics-off:hover > .bd_off {
+	display: block;
+}
+
+.comics-off-section .comics-off-container .comics-off .bd_off span {
+	font-family: Inter Bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+	position: relative;
+	top: 120px;
+}
+
+.comics-off-section .comics-off-container .comics-off .comics-off-cover {
+	overflow: hidden;
+	width: 100%; 
+	height: 260px;
+	background-image: url("../img/logo/adeauniverse-gray.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80px;
+}
+
+
+.comics-off-section .comics-off-container .comics-off .comics-off-cover img {
+	width: 100%; 
+	height: 100%;
+	transition: all 0.2s ease;
+}  
+
+.comics-off-section .comics-off-container .comics-off .comics-off-name {
+	width: fit-content;
+	position: relative;
+	margin-top: 10px;
+}
+
+.comics-off-section .comics-off-container .comics-off .comics-off-name span {
+	color: #776e67;
+	font-family: Inter;
+	font-size: 12px;
+	margin-top: 4px;
+}
+
+.comics-off-section .comics-off-container .comics-off .comics-off-name p {
+	font-size: 16px;
+	font-weight: normal;
+	font-family: Rubik Medium;
+	text-transform: uppercase;
+	color: rgb(243, 243, 243);
+	transition: 0.1s ease-in-out;
+	cursor: default;
+	margin-top: 6px;
+	margin-bottom: 5px;
+} 
+
+.comics-off-section .comics-off-container .comics-off .comics-off-name i {
+	font-size: 12px;
+	font-weight: normal;
+	font-family: Noto Sans;
+	text-transform: uppercase;
+	cursor: default;
+	font-style: normal;
+	color: #f08e2bee;
+} 
+
+
+
+
+
+
+/* ----------- L O A D   M O R E -------------------------------------------------- */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+
+.loadmore {
+	margin: 100px 0px;
+	text-align: center;
+	display: none;
+}
+
+.loadmore #back-comics {
+	background-color: #ffffff;
+	color: #121212;
+}
+
+.loadmore #back-comics:hover{
+	background-color: #121218;
+	border-color: #ffffff;
+	color: #ffffff;
+}
+
+
+.loadmore a {
+	background-color: rgb(245, 98, 0);
+	padding: 14px 50px;
+	border: 2px dashed #121218;
+	font-family: Build Titling;
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: normal;
+	text-transform: uppercase;
+	transition: 0.2s ease;
+}
+
+.loadmore a:hover {
+	background-color: #121218;
+	border-color: rgb(255, 115, 0);
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------- F O O T E R ------------------------------------------------------ */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+ 
+.footer {
+	clear: both;
+	background-color: #252329;
+	width: 100%;
+	height: 350px;
+	position: relative;
+	background-image: url("../img/images/back-login.png");
+	background-position: bottom;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.footer img {
+	position: absolute;
+	left: 100px;
+	top: -20px;
+	width: 370px;
+	opacity: 0.8;
+}
+
+
+.footer-container {
+	display: inline-flex;
+	margin-top: 65px;
+	margin-left: 45%;
+}
+
+.footer-container div{ 
+	margin: 0px 22px; 
+	max-width: 200px;
+}
+
+.footer-container h4 {
+	font-family: Noto Bold;
+	font-weight: normal;
+	font-size: 20px;
+	color: #ffffff;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.footer-container li {
+	margin: 5px 0px;
+	transition: 0.2s ease-out;
+}
+
+.footer-container li:hover {
+	margin-left: 10px;
+}
+
+.footer-container li a {
+	font-family: Noto Bold;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #999;
+	font-size: 18px;
+	transition: 0.1s;
+}
+
+.footer-container li a:hover {color: #fff;}

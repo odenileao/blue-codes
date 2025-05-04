@@ -1,0 +1,702 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+} 
+ 
+
+
+@font-face {
+	font-family:'Estandar';
+	src: url('../../fonts/Estandar-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+ 
+
+@font-face {
+	font-family:'Inter';
+	src: url('../../fonts/Inter-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Inter Medium';
+	src: url('../../fonts/Inter-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Inter Bold';
+	src: url('../../fonts/Inter-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Rubik';
+	src: url('../../fonts/Rubik-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+ 
+@font-face {
+	font-family:'Rubik Medium';
+	src: url('../../fonts/Rubik-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+} 
+
+@font-face {
+	font-family:'Rubik Bold';
+	src: url('../../fonts/Rubik-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}  
+
+@font-face {
+	font-family:'Noto Bold';
+	src: url('../../fonts/NotoSans_ExtraCondensed-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+} 
+
+@font-face {
+	font-family:'Noto Sans';
+	src: url('../../fonts/NotoSans_Condensed-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Noto Light';
+	src: url('../../fonts/NotoSans_ExtraCondensed-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family:'Barlow Bold';
+	src: url('../../fonts/BarlowCondensed-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Barlow Regular';
+	src: url('../../fonts/BarlowCondensed-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+
+
+/* -- Scrollbar -- */
+
+::-webkit-scrollbar {width: 0.7em;}
+::-webkit-scrollbar-track {background: #0a0810;}
+::-webkit-scrollbar-thumb {
+	background: #676374; 
+	border-radius: 100vw; 
+	border:2px solid #191924;
+}
+::-webkit-scrollbar-thumb:hover {background: #3f3d46;}
+
+
+
+ 
+
+/* ----------- B O D Y --------------------------------------------------------- */ 
+body {
+	background-color: #0c0b13;
+}
+
+
+#header-nav {width: 100%; position: fixed; z-index: 30;}
+
+.header {
+	background-color: #00000061;
+	width: 100%;
+	height: 61px;
+	padding: 0px 30px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.header .logo {position: relative; top: 8px; left: 0px;}
+.header .logo img{width: 40px; transition: 0.2s;}
+.header .logo img:hover{transform-style: preserve-3d; transform: scale(1.1);}
+
+
+
+.header .header-contents{
+	width: 40%;
+	line-height: 60px;
+	position: relative;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+
+
+.header .header-contents .login {position: absolute; right: 0px;}
+
+.header .header-contents div {margin: 0px 8px;}
+.header .header-contents #btn-login{
+	color: rgb(10, 10, 10);
+	border: none;
+	font-family: Noto Bold;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 6px 10px;
+	background-color: rgb(244, 244, 245);
+	border: 1px solid rgb(244, 244, 245);
+	transition: 0.3s ease;
+	margin: 0px 2px;
+}
+
+.header .header-contents #btn-login:hover {
+	background-color: #282533;
+	border-color: #282533;
+	color: rgb(244, 244, 245);
+}
+
+
+.header .header-contents #btn-reader {
+	color: #000000;
+	font-family: Noto Bold;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 6px 10px;
+	transition: 0.3s ease;
+	background: linear-gradient(to top right, #47c6fc, #c33dfc, #fc3d77, #ffbd24);
+}
+
+.header .header-contents #btn-reader:hover {
+	color: #ffffff;
+	background: linear-gradient(to top left, #47c6fc, #c33dfc, #fc3d77, #ffbd24);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- U S E R --------------------------------------------------------- */ 
+
+.user {
+	position: absolute;
+	border: 1px solid #131316;
+	width: 40px;
+	height: 40px;
+	border-radius: 100px;
+	top: 8px;
+	right: 30px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.user img {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	object-fit: cover;
+	position: relative;
+}
+
+
+.user-menu {
+	background-color: #191924;
+	height: auto;
+	width: 280px;
+	position: absolute;
+	border-radius: 2px;
+	right: 10px;
+	top: 60px;
+	color: #1c1d25;
+	border: 1px solid #302e31;
+	box-shadow: 0px 2px 10px #00000088;
+	display: none;
+} 
+
+.user-menu .user-menu-header {
+	display: flex;
+	width: 100%;
+	height: 65px;
+	border-bottom: 1px dashed #4f4d5a;
+	padding: 8px 30px 8px;
+}
+
+.user-menu .user-menu-header .extremer-icon img {
+	margin-top: 6px;
+	margin-left: -10px;
+	margin-right: 15px;
+}
+
+
+.user-menu .user-menu-header .user-header-txt {margin-top: 5px;}
+.user-menu .user-menu-header .user-header-txt h3 {
+	font-family: Estandar;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #e3e0e6;
+	font-weight: normal;
+}
+
+.user-menu .user-menu-header .user-header-txt p {
+	font-family: Noto Sans;
+	color: #9a979c;
+	font-weight: normal;
+	letter-spacing: 0px;
+	width: 180px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+.user-menu .user-menu-list li {
+	width: 100%;
+	padding: 16px;
+	height: auto;
+	font-weight: normal;
+	font-family: Noto Sans;
+	color: #fcfcfc;
+	font-size: 16px;
+	letter-spacing: 1px;
+	transition: all 0.2s ease-in-out;
+}
+
+.user-menu .user-menu-list li:hover {background: #111118;}
+
+.user-menu .user-menu-list li img {
+	margin-right: 20px; 
+	margin-bottom: -3px;
+}
+
+.user-menu .user-menu-list a #uml-line {
+	border-top: 1px dashed #4f4d5a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- EXTREME BOX LANDING -------------------------------------- */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+ 
+.box-landing {
+    width: 100%;
+    height: 500px;
+    background-image: url("../../img/images/banners/box1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.box-landing img { margin-top: 140px;}
+
+
+
+.box-landing a {
+    font-family: Estandar;
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #111118;
+    background: #fefefe;
+    padding: 14px 45px;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.box-landing a:hover {
+    background: #000000; 
+    color: #fefefe;
+    box-shadow: 0px 10px 18px #000000d7;
+}
+
+.box-landing .box-btn {margin-top: 80px;}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- EXTREME BOX SOBRE -------------------------------------- */ 
+
+
+
+.exbox-about {
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.exbox-about img {width: 220px; cursor: pointer;}
+
+.exbox-about .exbox-text {
+	width: 60%;
+}
+.exbox-about .exbox-text h2 {
+	font-family: Noto Bold;
+	color: #dfdfdf;
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+.exbox-about .exbox-text p {
+	font-family: Rubik;
+	font-size: 15.5px;
+	color: #eeeeee;
+	line-height: 28px;
+}
+
+.exbox-about .exbox-text p span {
+	padding: 6px;
+	border-radius: 2px;
+	background-color: #232226;
+	color: #e096ff;
+}
+
+
+
+
+.box-colors {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	width: 60%;
+	margin-bottom: 100px;
+}
+
+.box-colors div {width: 100px; height: 7px; border-radius: 10px;}
+
+.box-colors #bx1 {background-color: #0f77ee;}
+.box-colors #bx2 {background-color: #660cd2;}
+.box-colors #bx3 {background-color: #d30ea7;}
+.box-colors #bx4 {background-color: #cc2155;}
+.box-colors #bx5 {background-color: #ec6a00;}
+
+ 
+
+
+/* ----------- EXTREME BOX COMPRA -------------------------------------- */ 
+
+
+.exbox-buy {
+	width: 100%;
+	height: 350px;
+	padding: 50px;
+	display: flex;
+	justify-content: space-around;
+	background: linear-gradient(to right,  #05040a 20%, #1a1825 100%);
+	overflow: hidden;
+	margin-top: 100px;
+}
+
+.exbox-buy .exbox-img img { 
+	margin-top: -70px;
+	width: 450px; 
+}
+
+
+
+.exbox-buy .exbox-box {width: 50%;}
+.exbox-buy .exbox-box h2 {
+	font-family: Rubik Medium;
+	color: #eeeeee;
+	font-size: 50px;
+}
+
+.exbox-buy .exbox-box span {
+	font-family: Rubik Medium;
+	color: #9ad6ea;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.exbox-buy .exbox-box p {
+	font-family: Noto Sans;
+	font-size: 16px;
+	color: #eeeeee;
+	margin-top: 20px;
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+
+
+.exbox-buy .exbox-box .exbox-buy {}
+.exbox-buy .exbox-box #boxbuy-price {font-size: 26px; color: #ff99cc;}
+
+.exbox-buy .exbox-box #boxbuy-btn {
+	background: linear-gradient(to top right, #33ccff, #ff99cc 100%);
+	color: #000000;
+	padding: 15px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.2s;
+	border: none;
+	font-family: Rubik Medium;
+	font-size: 16px;
+	transform-style: preserve-3d;
+
+}
+
+.exbox-buy .exbox-box #boxbuy-btn:hover {
+	background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
+	transform: scale(1.03);
+	transform-origin: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- METAS EXTREME BOX -------------------------------------- */ 
+
+
+h1 {
+	font-family: Noto Bold;
+	font-size: 45px;
+	color: #e7e7e7;
+	text-align: center;
+	margin: 0 auto;
+	font-weight: normal;
+}
+
+#p {
+	font-family: Noto Light;
+	font-size: 20px;
+	color: #e7e7e7;
+	text-align: center;
+	margin: 0 auto;
+	font-weight: normal;
+}
+
+
+.btn-mais {
+	text-align: center;
+	margin: 0 auto;
+}
+.btn-mais a {
+	font-family: Estandar;
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #eeeef1;
+    background: #000000;
+    padding: 14px 45px;
+    border-radius: 50px; 
+	transition: 0.2s;
+}
+
+.btn-mais a:hover {
+	background: #ffffff; 
+    color: #000000;
+    box-shadow: 0px 10px 18px #000000d7;
+}
+
+
+
+
+
+
+/* ----------- EXTREME BOX CONDS ------------------------------------------------- */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+ 
+
+.conds {
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.conds .conds-container {width: 800px;}
+
+
+.conds .conds-image {margin-left: 50px;}
+.conds .conds-image img {width: 280px;}
+
+
+
+.conds #con-ca {border-color: #0f77ee;}
+.conds #con-ma {border-color: #660cd2;}
+.conds #con-ln {border-color: #d30ea7;}
+.conds #con-mw {border-color: #cc2155;}
+.conds #con-co {border-color: #ec6a00;}
+
+
+.conds .conds-item {
+	display: flex;
+	padding: 8px;
+	background: linear-gradient(to right,  #020004 20%, #1a1825 100%);
+	margin-bottom: 30px;
+	width: 100%;
+	height: 80px;
+	border-radius: 6px;
+	border-right: 5px solid #8a00e6;
+}
+
+
+.conds .conds-item h2 {
+	font-family: Rubik Bold;
+	font-size: 35px;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #8a00e6;
+	width: 70px;
+	height: 100%;
+	line-height: 65px;
+}
+
+.conds .conds-item .item {width: 100%; padding-left: 10px;}
+.conds .conds-item .item p {
+	font-family: Noto Sans;
+	font-size: 16px;
+	color: #dfdee2;
+	line-height: 20px;
+	margin-top: 12px; 
+}
+
+.conds .conds-item #ca {background-color: #0f77ee;}
+.conds .conds-item #ma {background-color: #660cd2;}
+.conds .conds-item #ln {background-color: #d30ea7;}
+.conds .conds-item #mw {background-color: #cc2155;}
+.conds .conds-item #co {background-color: #ec6a00;}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- F O O T E R ------------------------------------------------------ */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+ 
+.footer {
+	clear: both;
+	background-color: #252329;
+	width: 100%;
+	height: 350px; 
+	position: relative;
+	background-image: url("../../img/images/back-login.png");
+	background-position: bottom;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.footer img {
+	position: absolute;
+	left: 100px;
+	top: -20px;
+	width: 370px;
+	opacity: 0.8;
+}
+
+.footer-container {
+	display: inline-flex;
+	margin-top: 65px;
+	margin-left: 45%;
+}
+
+.footer-container div{ 
+	margin: 0px 22px; 
+	max-width: 150px;
+}
+
+.footer-container h4 {
+	font-family: Noto Bold;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 20px;
+	color: #ffffff;
+	margin-bottom: 15px;
+}
+
+.footer-container li {margin: 5px 0px;}
+.footer-container li a {
+	font-family: Noto Bold;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #999;
+	font-size: 17px; 
+	transition: 0.1s;
+}
+
+.footer-container li a:hover {color: #fff;}

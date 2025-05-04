@@ -1,0 +1,518 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+} 
+ 
+
+@font-face {
+	font-family:'Estandar';
+	src: url('../fonts/Estandar-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+ @font-face {
+	font-family:'Build Titling';
+	src: url('../fonts/built titling sb.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+  
+@font-face {
+    font-family:'Inter Medium';
+    src: url('../../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+	font-family:'Inter';
+	src: url('../fonts/Inter-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+	
+@font-face {
+	font-family:'Inter Bold';
+	src: url('../fonts/Inter-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Rubik';
+	src: url('../fonts/Rubik-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Rubik Medium';
+	src: url('../fonts/Rubik-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Raleway Bold';
+	src: url('../fonts/Raleway-Heavy.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+
+
+/* -- Scrollbar -- */
+
+::-webkit-scrollbar {width: 0.7em;}
+::-webkit-scrollbar-track {background: #191924;}
+::-webkit-scrollbar-thumb {
+	background: #676374; 
+	border-radius: 100vw; 
+	border:2px solid #191924;
+}
+::-webkit-scrollbar-thumb:hover {background: #3f3d46;}
+
+
+
+
+
+
+/* ----------- B O D Y --------------------------------------------------------- */ 
+body {
+	background-image: url("../img/images/ero/02.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #201824;
+}
+
+
+
+/* ----------- HEADER --------------------------------------------------------- */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+
+#header-nav {width: 100%; position: fixed; z-index: 20;}
+
+.header {
+    background-color: #2c222c;
+	width: 100%;
+	height: 60px;
+	padding: 0px 30px;
+	display: flex;
+}
+
+.header .logo {position: relative; top: 2px;left: 100px;}
+.header .logo img{width: 55px; transition: 0.2s;}
+.header .logo img:hover{transform-style: preserve-3d; transform: scale(1.1);}
+
+.header .ebtn {margin-left: 60%; margin-top: 20px;}
+.header .ebtn a {
+	font-family: Inter Bold;
+	color: #110e10;
+	border-radius: 4px;
+	padding: 10px 15px;
+	background: linear-gradient(to right, #ff7bb2, #ff9898);
+	transition: 0.2s;
+	margin-right: 8px;
+}
+
+.header .ebtn a:hover {background: linear-gradient(to right, #ff9898, #ff7bb2);}
+
+.header .ebtn #efaq {
+	padding: 10px;
+	color: #ff87b9;
+	background: #1a1417;
+	border: 2px solid #1a1417;
+}
+
+.header .ebtn #efaq:hover {
+	border-color: #ff87b9;
+	color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- S O C I A L ---------------------------------------------------- */
+
+.social {
+	position: fixed;
+	top: 140px;
+	right: 0px;
+	z-index: 30;
+}
+
+.social .social-container li {
+	padding: 14px 18px;
+	text-align: center;
+	transition: all 0.2s ease-in;
+	background-color: #dd4484;
+}
+
+.social .social-container li:hover {background-color: rgb(55, 53, 63);}
+.social .social-container img {margin-top: 4px;}
+
+ 
+ 
+
+
+
+
+
+
+
+
+/* ----------- U S E R --------------------------------------------------------- */ 
+
+.user {
+	position: absolute;
+	border: 1px solid #131316;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	border-radius: 100px;
+	top: 10px;
+	right: 60px;
+	cursor: pointer;
+}
+
+.user img {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	object-fit: cover;
+	position: relative;
+}
+
+.user-menu {
+	background-color: #191924;
+	height: auto;
+	width: 280px; 
+	position: absolute;
+	border-radius: 2px;
+	right: 10px;
+	top: 60px;
+	color: #1c1d25;
+	border: 1px solid #302e31;
+	box-shadow: 0px 2px 10px #00000088;
+    display: none;
+    z-index: 40;
+}
+
+.user-menu .user-menu-header {
+	display: flex;
+	width: 100%;
+	height: 65px;
+	border-bottom: 1px dashed #4f4d5a;
+	padding: 8px 30px 8px;
+}
+
+.user-menu .user-menu-header .extremer-icon img {
+	margin-top: 6px;
+	margin-left: -10px;
+	margin-right: 15px;
+}
+
+
+.user-menu .user-menu-header .user-header-txt {margin-top: 5px;}
+.user-menu .user-menu-header .user-header-txt h3 {
+	font-family: Estandar;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #e3e0e6;
+	font-weight: normal;
+}
+
+.user-menu .user-menu-header .user-header-txt p {
+	font-family: Estandar;
+	color: #9a979c;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+
+.user-menu .user-menu-list li {
+	width: 100%;
+	padding: 16px;
+	height: auto;
+	font-weight: normal;
+	font-family: Estandar;
+	color: #fcfcfc;
+	font-size: 16px;
+	letter-spacing: 1px;
+	transition: all 0.2s ease-in-out;
+}
+
+.user-menu .user-menu-list li:hover {background: #111118;}
+
+.user-menu .user-menu-list li img {
+	margin-right: 20px; 
+	margin-bottom: -3px;
+}
+
+.user-menu .user-menu-list a #uml-line {
+	border-top: 1px dashed #4f4d5a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- ERO MAIN ---------------------------------------------------- */
+
+.ero-main {
+    width: 60%;
+	padding-top: 130px;
+	float: right;
+	margin-right: 100px;
+	margin-bottom: 100px;
+}
+
+.ero-main .ero {width: 100%;text-align: right;}
+.ero-main .ero #ehome {
+	font-family: Rubik;
+	font-size: 14px;
+	color: #ffffff;
+}
+.ero-main .ero #ehome a {color: #f874a6; text-decoration: underline;}
+.ero-main .ero #ehome a:hover {text-decoration: none;}
+
+.ero-main .ero p {
+	font-family: Rubik;
+	font-size: 16px;
+	color: #ffffff;
+	margin-top: 8px;
+}
+
+.ero-main .ero h2 {
+    color: #f5629b;
+	font-family: Inter Bold;
+	text-transform: uppercase;
+	font-size: 2.4em;
+	margin-bottom: 30px;
+	margin-top: 12px;
+}
+
+.ero-main .ero h2 span {color: #ffffff;}
+
+
+.ero-main .ero #mainbtn {
+	font-family: Rubik Medium;
+	color: #ffffff;
+	border-radius: 4px;
+	padding: 14px 20px;
+	background: linear-gradient(to right, #d83579, #ff5fa2);
+	transition: 0.2s;
+	font-size: 15px;
+}
+
+.ero-main .ero #mainbtn:hover {
+	background: linear-gradient(to right, #ff9898, #ff7bb2);
+	color: #110e10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- ALL ERO BOOKS -------------------------------------------------- */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+
+.ero-comics {
+   position: relative;
+   width: 100%;
+   padding: 20px;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   background-color: #221824;
+}
+
+.ero-comics .erocomDiv {
+	width: 190px;
+	position: relative;
+    height: auto;
+    margin-left: 12px;
+	margin-bottom: 60px;
+	overflow: hidden;
+	border-radius: 6px;
+ }
+
+
+ .ero-comics .erocomDiv img {
+    width: 100%; 
+    margin-bottom: 5px;
+	transition: 0.2s;
+	background-image: url("../img/images/ero/ero_logo-w.png");
+	background-repeat: no-repeat;
+	background-size: 65px;
+	background-position: center;
+	height: 280px;
+	transition: 0.2s;
+	object-fit: cover;
+	border-radius: 6px;
+}
+
+.ero-comics .erocomDiv img:hover {
+	transform-style: preserve-3d;
+	transform: scale(1.1);
+}
+
+.ero-comics .erocomDiv .erocomInfo {width: 100%;padding: 6px;}
+
+.ero-comics .erocomDiv .erocomInfo span {
+    font-family: Rubik;
+    font-size: 12px;
+    color: #f174a4;
+}
+
+.ero-comics .erocomDiv .erocomInfo h3 {
+    font-family: Rubik Medium;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 6px;
+    letter-spacing: 0px;
+    color: #f6f6f6;
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- ERO BOOKS FOOTER -------------------------------------------------- */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+
+.ero-footer {
+	width: 100%;
+	margin-top: 3%;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	background-color: #61415e;
+	background-image: url("../img/images/ero-back.jpg");
+	background-blend-mode: difference;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+}
+
+.ero-footer p {
+	font-family: Estandar;
+	color: #ffffff;
+	font-size: 1em;
+	margin-top: -70px;
+	margin-left: 40%;
+	letter-spacing: 1px;
+}
+
+.ero-footer .ero-footer-container {
+	display: flex;
+	padding: 12px;
+	width: 100%;
+}
+
+.ero-footer .ero-footer-container .erofootimg img {
+	object-fit: cover;
+	margin-top: -270px;
+	width: 360px;
+}
+
+.ero-footer .ero-footer-container .erosocial {
+	width: 300px;
+	margin: 20px 20px 0px 30px;
+}
+.ero-footer .ero-footer-container .erosocial h3 {
+	color: #ffffff;
+	font-family: Raleway Bold;
+	font-size: 1.5em;
+} 
+
+.ero-footer .ero-footer-container .erosocial a {margin: 0px 20px;}
+.ero-footer .ero-footer-container .erosocial a img {
+	transition: 0.2s;
+	opacity: 1;
+}
+
+.ero-footer .ero-footer-container .erosocial a img:hover {opacity: 0.7;}
+
+
+.ero-footer .ero-footer-container .erocom {width: 400px; margin-top: 26px;}
+
+.ero-footer .ero-footer-container .erocom h3 {
+	color: #ffffff;
+	font-family: Raleway Bold;
+	font-size: 1.3em;
+	margin-bottom: 20px;
+}
+
+.ero-footer .ero-footer-container .erocom a {
+	font-family: Raleway Bold;
+	font-size: 20px;
+	font-weight: normal;
+	border-radius: 4px;
+	padding: 14px 32px;
+	background-color: #111118;
+	color: #ffffff;
+	transition: 0.2s;
+}
+
+.ero-footer .ero-footer-container .erocom a:hover {
+	background-color: #ffffff;
+	color: #1d0e14;
+}

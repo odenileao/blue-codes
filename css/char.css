@@ -1,0 +1,1270 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+} 
+ 
+@font-face {
+    font-family:'Inter Medium';
+    src: url('../../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+@font-face {
+	font-family:'Inter';
+	src: url('../fonts/Inter-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+	
+@font-face {
+	font-family:'Inter Bold';
+	src: url('../fonts/Inter-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Rubik';
+	src: url('../fonts/Rubik-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+ 
+@font-face {
+	font-family:'Rubik Medium';
+	src: url('../fonts/Rubik-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Rubik Bold';
+	src: url('../fonts/Rubik-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}  
+
+@font-face {
+	font-family:'Estandar';
+	src: url('../fonts/Estandar-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+ @font-face {
+	font-family:'Build Titling';
+	src: url('../fonts/built titling sb.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Noto Bold';
+	src: url('../fonts/NotoSans_ExtraCondensed-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+} 
+
+@font-face {
+	font-family:'Noto Sans';
+	src: url('../fonts/NotoSans_Condensed-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Barlow Bold';
+	src: url('../fonts/BarlowCondensed-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Barlow';
+	src: url('../fonts/BarlowCondensed-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- Scrollbar -- */
+
+::-webkit-scrollbar {width: 0.7em;}
+::-webkit-scrollbar-track {background: #0a0810;}
+::-webkit-scrollbar-thumb {
+	background: #676374; 
+	border-radius: 100vw; 
+	border:2px solid #191924;
+}
+::-webkit-scrollbar-thumb:hover {background: #3f3d46;}
+
+
+
+
+ 
+
+/* ----------- B O D Y --------------------------------------------------------- */ 
+body {background-color: #0c0b13;}
+
+
+
+ 
+
+
+
+
+/* ----------- HEADER --------------------------------------------------------- */ 
+
+#header-nav {width: 100%; position: fixed; z-index: 30;}
+
+.header {
+	background-color: #000001;
+	background-image: url("../img/images/header-back.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 700px;
+	width: 100%;
+	height: 61px;
+	padding: 0px 30px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.header .logo {position: relative; top: 8px; left: 0px;}
+.header .logo img{width: 40px; transition: 0.2s;}
+.header .logo img:hover{transform-style: preserve-3d; transform: scale(1.1);}
+
+
+
+.header .header-contents{
+	width: 40%;
+	line-height: 60px;
+	position: relative;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+
+
+.header .header-contents .login {position: absolute; right: 0px;}
+
+.header .header-contents div {margin: 0px 8px;}
+.header .header-contents #btn-login{
+	color: rgb(10, 10, 10);
+	border: none;
+	font-family: Noto Bold;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 6px 10px;
+	background-color: rgb(244, 244, 245);
+	border: 1px solid rgb(244, 244, 245);
+	transition: 0.3s ease;
+	margin: 0px 2px;
+}
+
+.header .header-contents #btn-login:hover {
+	background-color: #282533;
+	border-color: #282533;
+	color: rgb(244, 244, 245);
+}
+
+
+.header .header-contents #btn-reader {
+	color: #000000;
+	font-family: Noto Bold;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 6px 10px;
+	transition: 0.3s ease;
+	background: linear-gradient(to top right, #47c6fc, #c33dfc, #fc3d77, #ffbd24);
+}
+
+.header .header-contents #btn-reader:hover {
+	color: #ffffff;
+	background: linear-gradient(to top left, #47c6fc, #c33dfc, #fc3d77, #ffbd24);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+/* ----------- U S E R --------------------------------------------------------- */ 
+
+.user {
+	position: absolute;
+	border: 1px solid #131316;
+	width: 40px;
+	height: 40px;
+	border-radius: 100px;
+	top: 8px;
+	right: 30px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.user img {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	object-fit: cover;
+	position: relative;
+}
+
+
+.user-menu {
+	background-color: #191924;
+	height: auto;
+	width: 280px;
+	position: absolute;
+	border-radius: 2px;
+	right: 10px;
+	top: 60px;
+	color: #1c1d25;
+	border: 1px solid #302e31;
+	box-shadow: 0px 2px 10px #00000088;
+	display: none;
+} 
+
+.user-menu .user-menu-header {
+	display: flex;
+	width: 100%;
+	height: 65px;
+	border-bottom: 1px dashed #4f4d5a;
+	padding: 8px 30px 8px;
+}
+
+.user-menu .user-menu-header .extremer-icon img {
+	margin-top: 6px;
+	margin-left: -10px;
+	margin-right: 15px;
+}
+
+
+.user-menu .user-menu-header .user-header-txt {margin-top: 5px;}
+.user-menu .user-menu-header .user-header-txt h3 {
+	font-family: Estandar;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #e3e0e6;
+	font-weight: normal;
+}
+
+.user-menu .user-menu-header .user-header-txt p {
+	font-family: Noto Sans;
+	color: #9a979c;
+	font-weight: normal;
+	letter-spacing: 0px;
+	width: 180px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+.user-menu .user-menu-list li {
+	width: 100%;
+	padding: 16px;
+	height: auto;
+	font-weight: normal;
+	font-family: Noto Sans;
+	color: #fcfcfc;
+	font-size: 16px;
+	letter-spacing: 1px;
+	transition: all 0.2s ease-in-out;
+}
+
+.user-menu .user-menu-list li:hover {background: #111118;}
+
+.user-menu .user-menu-list li img {
+	margin-right: 20px; 
+	margin-bottom: -3px;
+}
+
+.user-menu .user-menu-list a #uml-line {
+	border-top: 1px dashed #4f4d5a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- M E N U --------------------------------------------------------- */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+
+.menu-list a #cartoon:hover {color: #15aaff;}
+.menu-list a #comics:hover {color: #ff7c10;}
+.menu-list a #mangas:hover {color: #af2aff;}
+
+.menu-list span {
+	margin-top: 15px;
+	margin-right: 4px;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.menu{
+	background-color: #191924;
+	width: 100%;
+	text-align: center;
+	box-shadow: 0px 5px 10px #000000c9;
+}
+
+.menu-list{
+	width: 90%;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.menu-list a {display: flex; justify-content: space-around;}
+
+.menu-list li{
+	color: #fafafa;
+	font-size: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-family: Noto Bold;
+	padding: 14px 6px;
+	transition: 0.2s ease;
+}
+
+.menu-list li:hover{color: #bbbbbb;}
+.menu-list li:hover ~ span{color: #bbbbbb;}
+.menu-list span{
+	margin-top: 20px;
+	margin-right: 4px;
+	font-size: 14px;
+	color: #fafafa;
+	font-weight: normal;
+}
+
+
+
+.menu-list #menuactived {border-bottom: 3px solid white;}
+
+
+
+
+
+
+
+/* CHARACTERS ---------------------------------------------------- */ 
+/* -------------------------------------------------------------- */ 
+
+
+#char {
+    width: 100%;
+    height: 560px;
+    background-image: url("../img/images/back-login.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+	padding-top: 120px;
+	overflow: hidden;
+}
+
+#char .char-container {
+    width: 100%;
+    height: 560px;
+    display: flex;
+	justify-content: center;
+	padding: 0px 150px;
+}
+
+#char .char-container .char-info {position: relative; margin-top: 2em;}
+
+#char .char-container .char-info .char-name {
+	width: 720px;
+	position: relative;
+}
+
+#char .char-container .char-info h3 {
+	font-family: Barlow Bold;
+	font-weight: normal;
+    color: #ff4f42;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+#char .char-container .char-info .char-name h1 {
+	font-family: Noto Bold;
+	font-weight: normal;
+    color: #ffffff;
+    font-size: 3em;
+}
+
+#char .char-container .char-info .char-quote {
+	width: 500px;
+	height: 120px; 
+	text-overflow: ellipsis;
+	white-space: normal;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	color: #eee;
+	font-family: Inter;
+} 
+
+#char .char-container .char-info .char-quote span {
+    color: #eee;
+	line-height: 24px;
+	font-family: Rubik;
+	font-weight: normal;
+	font-size: 17px;
+	letter-spacing: 0px; 
+}
+
+#char .char-container .char-info .char-quote q {
+    color: #ff3318;
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: Estandar;
+}
+
+
+#char .char-container .char-info a {
+    color: rgb(26, 17, 17);
+    font-family: Noto Bold;
+	font-size: 20px;
+	text-transform: uppercase;
+	border-radius: 3px;
+    background: #f7f7f7;
+    padding: 10px 30px;
+}
+
+#char .char-container .char-info a:hover {
+	background: linear-gradient(to right, #fd5000, #cf00ad);
+	color: #ffffff;
+} 
+
+
+#char .char-container .char-image { }
+#char .char-container .char-image img {width: 350px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- CATCH THEM IN SUPERWARS -------------------------------------------- */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+
+
+.catch-title h3 {
+	font-family: Noto Bold;
+	color: #ffffff;
+	font-size: 45px;
+	text-transform: uppercase;
+	margin-left: 100px;
+	margin-bottom: 30px;
+} 
+
+.catch {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 80px;
+}
+
+.catch .catch-char {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-left: 30px;
+}
+
+.catch .catch-char .catch-char-item {
+	width: 160px;
+	height: 350px;
+	margin-right: 15px;
+}
+
+.catch .catch-char .catch-char-item img {
+	background: #ffffff;
+	width: 100%;
+	height: 250px;
+	background-image: url('../img/logo/adeauniverse.png');
+	background-position: center;
+	background-size: 70px;
+	background-repeat: no-repeat;
+	margin-bottom: 16px;
+	border-radius: 3px;
+}
+
+.catch .catch-char .catch-char-item a {
+	color: #dddddd;
+	font-family: Noto Bold;
+	font-size: 20px;
+	text-transform: uppercase;
+	transition: 0.2s;
+}
+
+.catch .catch-char .catch-char-item a:hover {opacity: 0.6;}
+
+.catch .catch-char .catch-char-item p {
+	margin-top: 8px;
+	color: #8988aa;
+	font-family: Noto Sans;
+	font-size: 13.5px;
+	text-transform: uppercase;
+}
+
+
+
+
+.catch .catch-img {margin-top: -70px;}
+.catch .catch-img img {width: 320px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- TRIADE ---------------------------------------- */ 
+/* »»»»»»»»»»»»»» */
+
+
+
+.triade-title {text-align: center;}
+
+.triade-title h2 {
+	font-family: Barlow Bold;
+	font-size: 100px;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.triade-title p {
+	font-family: Noto Sans;
+	font-size: 20px;
+	color: #eeeeee;
+	text-transform: uppercase;
+}
+
+.triade {
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	margin-bottom: 100px;
+}
+
+.triade .triade-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 60px;
+}
+
+.triade .triade-container .triade-item {
+	width: 250px;
+	height: 480px;
+	background: #131119;
+	border-radius: 5px;
+	border: 1px solid #222236;
+	padding: 6px;
+	position: relative;
+}
+
+.triade .triade-container .triade-item img {
+	width: 100%;
+	height: 320px;
+	border-radius: 6px;
+}
+
+.triade .triade-container .triade-item a {
+	font-family: Noto Bold;
+	font-size: 30px;
+	color: #efefef;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-left: 6px;
+	transition: 0.2s;
+}
+
+.triade .triade-container .triade-item a:hover {opacity: 0.6;}
+
+.triade .triade-container .triade-item p {
+	font-family: Noto Sans;
+	font-size: 15px;
+	color: #cccccc;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 2px;
+	margin-top: 18px;
+	margin-left: 14px;
+	letter-spacing: 3px;
+}
+
+.triade .triade-container .triade-item span {
+	font-family: Noto Sans;
+	font-size: 12.5px;
+	color: #aaaaaa;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-left: 16px;
+}
+
+
+.triade .triade-container .triade-item .triade-icon {
+	position: absolute;
+	clear: both;
+	background: #21212b;
+	width: 50px;
+	height: 50px;
+	border-radius: 4px;
+	bottom: 15px;
+	right: 15px;
+}
+
+.triade .triade-container .triade-item .triade-icon img {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	top: 5px;
+	left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- MEET THE MAIN LEGIONARIES WARRIORS ----------------------------------------------- */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+
+.legion {
+	width: 100%; 
+	height: auto;	
+	text-align: center;
+}
+
+.legion h1 {
+	font-family: Noto Bold;
+	font-weight: normal;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 2.8em;
+	color: #e5e5e5;
+	margin-bottom: 20px;
+}
+ 
+.legion p {
+	margin-top: 8px;
+	color: #eeeeee;
+	font-family: Noto Sans;
+	text-transform: uppercase;
+	font-size: 17px;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+} 
+
+.legion .legiteam {
+	width: 100%; 
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+} 
+
+
+.legion .legiteam .legichar {
+	width: 160px; 
+	margin: 0px 8px;
+	position: relative;
+	text-align: left;
+}
+
+
+
+
+
+
+
+.legion .legiteam .legichar .legimg .legilogo {
+	position: absolute;
+	background: #000000cc;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	opacity: 0;
+	transition: 0.2s;
+}
+
+.legion .legiteam .legichar .legimg .legilogo img {
+	width: 50px;
+	height: 50px;
+	opacity: 1;
+	transition: 0.2s;
+}
+
+.legion .legiteam .legichar .legimg .legilogo img:hover {
+	transform-style: preserve-3d;
+	transform: scale(1.15);
+}
+
+
+
+
+.legion .legiteam .legichar .legimg {
+	width: auto;
+	height: 340px;
+	overflow: hidden;
+	background-image: url("../img/logo/adeauniverse-gray.png");
+	background-position: center;
+	background-size: 80px;
+	background-repeat: no-repeat;
+	background-color: #1e1e2a;
+	position: relative;
+}
+
+.legion .legiteam .legichar .legimg img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.legion .legiteam .legichar .legimg:hover > #legilogo {
+	opacity: 1;
+}
+
+
+.legion .legiteam .legichar h2 {
+	font-family: Noto Bold;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-shadow: 0px 1px 3px #000000;
+	font-size: 18px;
+	letter-spacing: 1px;
+	width: fit-content;
+	margin: 14px 0px 5px 2px;
+	text-align: left;
+}
+
+.legion .legiteam .legichar span {
+	font-family: Noto Sans;
+	text-transform: uppercase;
+	color: #bbbbbb;
+	font-size: 12px;
+	width: fit-content;
+	margin-top: 14px;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**** ---- C H A R A C T E R S ------ ****/
+
+.char-title {margin-left: 50px;}
+
+.char-title h3 {
+	font-family: Inter Bold;
+	font-weight: normal;
+	font-size: 40px;
+	color: #fdfdfd;
+}
+
+.char-title h4 {
+	font-family: Inter;
+	font-weight: normal;
+	font-size: 22px;
+	color: #fdfdfd;
+}
+
+.char-title h4 span {font-family: Inter Bold; color: #fa6b61;}
+
+.char-search {margin-top: 60px;}
+
+.char-search .cs-input {width: 300px; display: flex;}
+
+.char-search .cs-input #cs-select {
+    background: #2a263b;
+	border: 1px solid #21212c;
+	border-radius: 3px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+	font-size: 15px;
+    font-family: Rubik;
+	color: #eeeeee;
+}
+
+
+.char-search .cs-input a {
+    transition: 0.2s ease-in-out;
+    font-family: Mistica pro;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(150, 146, 155);
+    margin-top: 10px;
+}
+
+.char-search .cs-input a:hover {color: #fa5f54;}
+
+
+
+
+
+
+
+
+
+.char-search .char-aside {margin-top: 200px;}
+.char-search .char-aside img {width: 250px;}
+
+
+
+
+
+
+
+
+.plus-cont {max-width: 500px; padding: 6px;}
+
+.plus-cont .plus-head {
+	width: 100%;
+	border-radius: 3px;
+	padding: 6px;
+} 
+
+.plus-cont .plus-head h3 {
+	font-family: Rubik Medium;
+	font-size: 20px;
+	color: #eeeeee;
+	text-transform: uppercase;
+	margin-left: 3px;
+	margin-bottom: 6px;
+}
+
+.plus-cont .plus-head tr {
+	display: flex;
+	justify-content: space-between;
+}
+
+.plus-cont .plus-head td {
+	font-family: Noto Sans;
+	font-size: 16px;
+	color: #eeeeee;
+	padding: 6px 0px;
+}
+
+.plus-cont .plus-head td input {
+	cursor: pointer;
+	outline: none;
+	border: none;
+	background: #000000;
+}
+
+
+
+
+
+
+.plus-cont .plus-check {
+	width: 100%;
+	border-radius: 3px;
+	padding: 6px;
+} 
+
+.plus-cont .plus-check h3 {
+	font-family: Rubik Medium;
+	font-size: 20px;
+	color: #eeeeee;
+	margin-left: 3px;
+	margin-bottom: 6px;
+	text-transform: uppercase;
+}
+
+.plus-cont .plus-check tr {
+	display: flex;
+	justify-content: space-between;
+}
+
+.plus-cont .plus-check td {
+	font-family: Noto Sans;
+	font-size: 16px;
+	color: #eeeeee;
+	padding: 6px 0px;
+}
+
+.plus-cont .plus-check td input {
+	cursor: pointer;
+	outline: none;
+	border: none;
+	background: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- All Characters -- **/
+
+.all-chars {
+    width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.all-chars .ac-container {
+    display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 14px;
+	padding-right: 12px;
+	margin-top: 60px;
+}
+
+.all-chars .ac-container .character {
+    width: 160px;
+    height: 180px;
+	position: relative;
+	text-align: left;
+}
+
+.all-chars .ac-container .character p {
+    font-size: 18px;
+	font-family: Noto Bold;
+    text-transform: uppercase;
+    color: #efefef;
+	margin-bottom: 6px;
+}
+
+
+.all-chars .ac-container .character h4 {
+	font-family: Noto Sans;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #747183;
+	cursor: default;
+	margin-top: 3px;
+}
+
+
+.all-chars .ac-container .character img {
+    width: 100%;
+    height: 100%;
+	background: #0c0b13;
+	margin-bottom: 12px;
+	transition: all 0.2s ease-in-out;
+	object-fit: cover;
+	border-radius: 1px;
+	background-image: url("../img/logo/adeauniverse-gray.png");
+	background-repeat: no-repeat;
+	background-size: 90px;
+	background-position: center;
+	position: relative;
+}
+
+.all-chars .ac-container .character a:hover > #ccin {opacity: 1;}
+.all-chars .ac-container .character #ccin {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: transform 0.3s;
+	transition: 0.3s;
+	transform-style: preserve-3d;
+}
+
+
+/*
+.all-chars .ac-container .character img:hover {
+	transform: scale(preserve-3d);
+	transform: scale(1.05);
+	opacity: 1;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- PAGINATION ------------------------------------------------------ */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+ 
+
+.char-pagination {
+	float: right;
+	max-width: 400px;
+	overflow: hidden;
+	margin: 80px 280px 100px 0px;
+	height: auto;
+}
+
+.char-pagination ul {display: flex;}
+
+.char-pagination li {
+	font-family: Estandar;
+	font-size: 17px;
+	color: #ffffff;
+	margin-right: 10px;
+	border-radius: 6px;
+	padding: 10px;
+	width: 50px;
+	height: 40px;
+	background: #25252b;
+	cursor: pointer;
+	transition: all 0.1s;
+	text-align: center;
+}
+
+.char-pagination li:hover {background: #383841;}
+
+.char-pagination #pagin-active {
+	background: #f54323;
+	color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- F O O T E R ------------------------------------------------------ */ 
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+ 
+.footer {
+	clear: both;
+	background-color: #252329;
+	width: 100%;
+	height: 350px;
+	position: relative;
+	background-image: url("../img/images/back-login.png");
+	background-position: bottom;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+} 
+
+.footer img {
+	position: absolute;
+	left: 100px;
+	top: -20px;
+	width: 370px;
+	opacity: 0.8;
+}
+
+
+.footer-container {
+	display: inline-flex;
+	margin-top: 65px;
+	margin-left: 45%;
+}
+
+.footer-container div{ 
+	margin: 0px 22px; 
+	max-width: 150px;
+}
+
+.footer-container h4 {
+	font-family: Noto Bold;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 20px;
+	color: #ffffff;
+	margin-bottom: 15px;
+}
+
+.footer-container li {margin: 5px 0px;}
+.footer-container li a {
+	font-family: Noto Bold;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #999;
+	font-size: 17px; 
+	transition: 0.1s;
+}
+
+.footer-container li a:hover {color: #fff;}

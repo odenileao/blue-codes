@@ -1,0 +1,237 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+} 
+  
+
+
+@font-face {
+font-family:'Rubik Medium';
+src: url('../../fonts/Rubik-SemiBold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+@font-face {
+	font-family:'Rubik';
+	src: url('../../fonts/Rubik-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+ 
+@font-face {
+	font-family:'Rubik Bold';
+	src: url('../../fonts/Rubik-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+} 
+
+
+@font-face {
+	font-family:'Inter';
+	src: url('../../fonts/Inter-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family:'Inter Medium';
+    src: url('../../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+	
+@font-face {
+	font-family:'Inter Bold';
+	src: url('../../fonts/Inter-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family:'Noto Sans';
+    src: url('../../fonts/NotoSans_Condensed-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Noto Bold';
+    src: url('../../fonts/NotoSans_ExtraCondensed-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+/** -------------------------------------------------------------------- **/
+body {
+    background: linear-gradient(to top right, #010204, #d83bff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo {
+    margin-top: 2%; 
+    text-align: center; 
+    margin-bottom: 2%;
+}
+
+.logo img {
+    opacity: 0.7; 
+    width: 50px; 
+    transition: 0.2s;
+}
+
+.logo img:hover {opacity: 1;}
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+/** ------------- S I G N   U P ------------- **/
+
+.sign {text-align: center;}
+
+.sign-container {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    background-color: #eeeff1;
+    border-radius: 5px;
+    padding: 20px 30px;
+    text-align: left;
+}
+
+.sign .sign-container .sig-top {text-align: center;}
+.sign .sign-container .sig-top h2 {
+    font-family: Inter Bold;
+    font-size: 1.5em;
+    color: #27292e;
+    margin-bottom: 5px;
+}
+
+.sign .sign-container .sig-top p {
+    font-family: Inter Medium;
+    font-size: 0.9em;
+    color: #27292e;
+}
+
+.sign .sign-container #form {width: 100%;}
+
+.sign .sign-container #form h4 {
+    font-family: Rubik Medium;
+    font-weight: normal;
+    text-transform: ;
+    font-size: 15px;
+    color: #38373a;
+    margin-bottom: 8px;
+}
+
+.sign .sign-container #form .inpTxt {
+    border: none;
+    outline: none;
+    border: 1px solid #bfbbca;
+    background: #d3d6df;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 12px;
+    font-family: Inter;
+    color: #2d2e38;
+    font-size: 1.0em;
+    border-radius: 2px;
+}
+
+.sign .sign-container #form .inpTxt:active {
+    background: #d3d6df; 
+    border-color: #555a6b;
+}
+.sign .sign-container #form .inpTxt:focus {
+    background: #d3d6df; 
+    border-color: #84899b;
+}
+
+.sign .sign-container #form #button {
+    width: 100%;
+    height: 45px;
+    font-family: Rubik Bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.0em;
+    background: #1a1b1f;
+    border: none;
+    color: #eceef5;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.sign .sign-container #form #button:hover {
+    background: linear-gradient(to right, #9f45e9, #d83bff);
+    color: #ffffff;
+    box-shadow: 0px 0px 15px #c814ff71;
+}
+
+.sign .sign-container #form #check {margin-top: 8px; cursor: pointer;}
+
+.sign .sign-container #form label {
+    font-family: Rubik;
+    color: #0d0e13;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.sign .sign-container #form a {
+    font-family: Rubik Medium;
+    color: #8e00e0;
+    font-size: 14.5px;
+    transition: 0.2s;
+} 
+
+.sign .sign-container #form a:hover {color: #35373d;}
+.sign .sign-container #form #checkbox {float: left;}
+
+
+
+
+
+
+
+
+
+
+/*
+.clipart {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -140px;
+    z-index: -100;
+}
+.clipart img {
+    width: 100%;
+    height: auto;
+}
+*/

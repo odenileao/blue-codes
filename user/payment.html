@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<title>Pagamento | ADEA Extreme</title>
+		<!-- meta tags -->
+	<meta charset="utf-8"> 
+	<meta name="description" content="">
+	<meta name="author" content="ADEA">
+	<meta name="viewport" content="width=device-width, initial-scale = 1">
+		<!-- Link tags -->
+	<link rel="stylesheet" type="text/css" href="user-css/payment.css">
+	<link rel="shortcut icon" href="../favicon.png" type="image/x-png">
+	<link rel="stylesheet" type="text/css" href="../css/uicons-regular-rounded/css/uicons-regular-rounded.css">
+
+	<script src="../js/jquery/jquery-3.6.4.min.js"></script>
+    <script src="../js/script.js"></script>
+</head> 
+    
+<body>   
+	
+
+
+
+
+
+
+<!-- PROMO MODAL »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» -->
+
+<section id="promo-modal">
+    <div class="close" id="promoclose">
+        <i class="fi-rr-cross"></i>
+    </div>
+
+    <div class="promo-form">
+        <p>Insira o Código de 10 Dígitos</p>
+        <input type="text" name="text" id="promoinput" placeholder="Eg.: XXXXXXXXXX" maxlength="10">
+        <button id="promobtn">Confirmar Código</button>
+    </div>
+</section>
+            
+<div id="promobg"></div>
+        
+        
+
+
+
+<!-- H E A D E R »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» -->
+
+<div id="header-nav">
+	<header class="header">
+		<div class="logo"> 
+			<a href="../index.html"> 
+				<img src="../img/logo.png" title="ADEA Extreme">
+			</a>
+		</div> 
+
+		
+		<div class="header-contents">
+			<div class="login">  
+				<a id="btn-login" href="../pages/signup.html">Sign up</a> 
+				<a id="btn-login" href="../pages/login.html">Login</a>&nbsp;&nbsp;
+			<!--<a id="btn-reader" href="pages/links/reader.lnk" target="_blank">Assinar</a>-->
+			</div>
+		</div>
+	</header>
+
+
+
+
+
+
+<!-- User -->
+	<div class="user">
+		<img src="../img/images/users/da1.jpg" >
+	</div>
+
+	<div class="user-menu">
+		<div class="user-menu-header">
+			<div class="extremer-icon">
+				<img src="../img/icons/e.png" alt="icon">
+			</div>
+				
+			<div class="user-header-txt">
+				<h3>Olá Extremer!</h3>
+				<p>Adea10</p>
+			</div>
+		</div>
+
+		<div class="user-menu-list">
+			<a href="user.html">
+				<li>
+					<span><img src="../img/icons/user-menu/user.png" alt="icon"></span>  Meu Perfil
+				</li>
+			</a>
+
+			<a href="#">
+				<li>
+					<span><img src="../img/icons/user-menu/account.png" alt="icon"></span>  Estado da Conta
+				</li>
+			</a>
+
+			<a href="box.html">
+				<li id="uml-line">
+					<span><img src="../img/icons/user-menu/box.png" alt="icon"></span>  Extreme BOX
+				</li>
+			</a>
+
+			<a href="../index.html">
+				<li id="uml-line">
+					<span><img src="../img/icons/user-menu/logout.png" alt="icon"></span> Sair
+				</li>
+			</a>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	
+
+<br><br><br><br><br>
+
+
+
+
+
+
+
+
+<section class="payform">
+    <div class="paymethod">
+        <h2>Método de Pagamento</h2>
+
+        <div class="paymethod-box">
+            <div class="paymethod-box-head">
+                <div class="pbh-paypal" id="paypaldiv">
+                    <p>Paypal</p>
+                    <img src="../img/images/paypal.png" alt="img">
+                </div>
+                
+                <div class="pbh-cards" id="cardsdiv">
+                    <p>Cartão de Crédito</p>
+                    <img src="../img/images/payment-cards.png" alt="img">
+                </div>
+            </div> 
+
+            <form class="paymethod-box-form">
+                <!-- Paypal Payment Section -->
+                <div id="pb-paypalslide">
+                    <div class="paypal-form">
+                        <div>
+                            <img src="../img/icons/user-menu/calendar.png" alt="icon" draggable="false"> 
+                            <p>E-mail</p>
+                            <input type="email" name="email" id="paypalmail" placeholder="E-mail (válido)" maxlength="60">
+                        </div>
+                        <br>
+                        <div>
+                            <img src="../img/icons/user-menu/lock.png" alt="icon" draggable="false">                       
+                            <p>Palavra-passe</p>
+                            <input type="password" name="password" id="paypalpass" placeholder="Palavra-passe" maxlength="62">   
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cards Payment Section -->                
+                <div id="pb-cardslide">
+                    <img src="../img/icons/user-menu/cards.png" alt="icon" draggable="false"> 
+                    <p>Número do Cartão</p>
+                    <input type="password" name="cardnum" id="cardnum" placeholder="0000 0000 0000 0000" maxlength="16">
+                    <br><br>
+                    
+                    <div class="pbf-form">
+                        <div>
+                            <img src="../img/icons/user-menu/calendar.png" alt="icon" draggable="false"> 
+                            <p>Data de Expiração</p>
+                            <input type="text" name="text" id="dataexp" placeholder="MM/YY" maxlength="5">
+                        </div>
+
+                        <div>
+                            <img src="../img/icons/user-menu/lock.png" alt="icon" draggable="false">                       
+                            <p>CVC/CVV</p>
+                            <input type="text" name="text" id="cvc" placeholder="000" maxlength="3">   
+                        </div>
+                    </div>
+                </div>
+                        
+               
+
+                <div class="pb-btn-div" style="z-index: 10;">
+                    <i class="fi-rr-lock" ></i> <h3>Esta Transação está protegida com o Certificado SSF.</h3>
+                    <input type="submit" value="Confirmar Pagamento" id="paybutton">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    
+    <div class="payprice">
+        <div class="adeamoney">
+            <img src="../img/images/adea-pay.png" alt="deusaadea">
+        </div>
+
+        <div class="payprice-box">
+            <div class="pb-week">
+                <h3><i class="fi-rr-money-check-edit"></i> Preço do plano</h3>
+                <p>$2.60<span> /Semana</span></p>
+            </div>
+
+            <div class="pb-today">
+                <div class="pb-today-head">
+                    <p>Hoje você pagou($)</p>
+                    <p>$<span id="pb-span">0</span></p>
+                </div>
+                <p>Pague sempre antes do Prazo Semanal terminar para Ativar 
+                    requisitos da EXTREME BOX.</p>
+            </div>
+
+            <div class="pb-promo">
+                <button id="promo">Tenho o Código grátis PROMO!</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    </body>
+</html>

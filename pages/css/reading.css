@@ -1,0 +1,312 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+ 
+@font-face {
+    font-family:'Inter Medium';
+    src: url('../../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+	font-family:'Noto Sans';
+	src: url('../../fonts/NotoSans_Condensed-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+
+
+
+/* -- Scrollbar -- */
+
+::-webkit-scrollbar {width: 0.7em;}
+::-webkit-scrollbar-track {background: #0c0b13;}
+::-webkit-scrollbar-thumb {
+	background: #676374; 
+	border-radius: 100vw; 
+	border:2px solid #191924;
+}
+::-webkit-scrollbar-thumb:hover {background: #3f3d46;}
+
+
+
+
+
+
+/* ----------- B O D Y --------------------------------------------------------- */ 
+
+body {
+	background-image: url("../../img/logo/eback.png");
+	background-size: 150px;
+	background-color: #04030a;
+}
+
+#fixed-header {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+header {
+    background-color: #111115e8;
+    width: 100%;
+    height: 50px;
+}
+
+header .header-container {
+	display: flex; 
+	width: 100%;
+	height: 100%;
+	padding: 0px 0px 0px 20px;
+	justify-content: space-around;
+}
+ 
+header .header-container .back-btn {
+	padding: 8px;
+	padding-top: 11px;
+	background: #2c2c31;
+	text-align: center;
+	width: 40px;
+	height: 36px;
+	border-radius: 4px;
+	margin-top: 8px;
+	cursor: pointer;
+}
+
+header .header-container .back-btn:hover {background: #424249;}
+
+header .header-container .name {
+	width: 350px;
+	height: 100%; 
+	margin-top: 15px;}
+ 
+
+header .header-container .name p {
+	font-family: Inter Medium;
+	color: #fff;
+	font-weight: normal;
+	font-size: 20px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: default;
+} 
+
+
+header .header-container a {margin-top: 14px;}
+header .header-container #backp {
+	padding: 8px 12px 6px 12px;
+	background: #2c2c31;
+	color: #ffffff;
+	font-family: Noto Sans;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 4px;
+	cursor: pointer;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	transition: 0.1s;
+}
+
+header .header-container #backp:hover {background: #f5f5f5; color: #000000;}
+
+header .header-container .arrows {
+	width: 30%;
+	display: inline-flex;
+}
+
+header .header-container .arrows span {
+	padding: 8px;
+	padding-top: 11px;
+	background: #2c2c31;
+	color: #ffffff;
+	font-family: Noto Sans;
+	font-size: 13px;
+	text-align: center;
+	width: 40px;
+	height: 36px;
+	border-radius: 4px;
+	margin-top: 8px;
+	cursor: pointer;
+}
+
+header .header-container .arrows span:hover {background: #f5f5f5; color: #19191b;}
+
+header .header-container .arrows p {
+	font-family: Noto Sans;
+	color: #fff;
+	font-size: 22px;
+	margin: 12px 12px 0px 12px;
+	cursor: default;
+}
+
+
+header .header-container .read-mode {
+	width: 10%;
+	display: inline-flex;
+	margin-top: 4px;
+}
+
+header .header-container .read-mode a {
+	font-size: 16px;
+	text-align: center;
+	margin-right: 6px;
+}
+
+header .header-container .read-mode a span {
+	padding: 12px 12px 6px 12px;
+	width: 45px;
+	height: 36px;
+	border-radius: 4px;
+}
+
+header .header-container .read-mode #read-scroll {
+	background: #ff1e00;
+	color: #ffffff;
+	transition: 0.1s;
+}
+
+header .header-container .read-mode #read-click {
+	background: #ffa300;
+	color: #000000;
+	transition: 0.1s;
+}
+
+header .header-container .read-mode #read-scroll:hover {background: #be0600;}
+header .header-container .read-mode #read-click:hover {background: #ffcd76;}
+
+
+header .header-container .buttons {
+	width: 10%;
+	line-height: 60px;
+}
+
+header .header-container .buttons span {
+	font-weight: normal;
+	padding: 8px 8px 2px 8px;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	background: #2c2c31;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 2px;
+}
+
+header .header-container .buttons span:hover {background: #f5f5f5; color: #19191b;}
+
+
+
+
+
+
+
+
+
+
+
+
+.page-cont {
+	max-width: 720px;
+	margin: 0 auto;
+	overflow: hidden;
+	transition: transform 0.2s;
+	padding-top: 70px;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: auto;
+	transition: max-width 0.3s ease;
+}
+
+.page-cont .pages {
+	height: auto;
+	width: 100%;
+	transition: transform 0.2s;
+	margin-bottom: 6px;
+	transform-origin: center;
+}
+
+
+
+
+/* Botão expandido **/
+
+.floating-btn {
+            position: fixed;
+            bottom: 80px;
+            right: 50px;
+            width: 55px;
+            height: 55px;
+            background-color: #ffa300;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .floating-btn img {
+            width: 21px;
+            height: 21px;
+        }
+
+        /* Container dos botões ocultos */
+        .floating-menu {
+            position: fixed;
+            bottom: 140px;
+            right: 53px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease-in-out;
+            background-color: #212125;
+            border: 1px solid #242429;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Ícones do menu */
+        .floating-menu .menu-item {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            cursor: pointer;
+        }
+
+        .floating-menu .menu-item:hover {
+            background-color: #35353c;
+        }
+
+        .floating-menu .menu-item img {
+            width: 21px;
+            height: 21px;
+            margin-top: 5px;
+        }
+
+        /* Classe ativa para mostrar os botões */
+        .floating-menu.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
